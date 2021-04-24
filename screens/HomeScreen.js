@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
   buttons: {
-    backgroundColor:"blue",
+    backgroundColor:"coral",
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
