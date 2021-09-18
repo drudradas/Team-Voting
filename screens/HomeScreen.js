@@ -22,19 +22,19 @@ export default class HomeScreen extends Component {
  teamB(){
    console.log(db);
    db.ref('/').update({
-     'teamB':2
+     'teamB': 1
    })
  }
 
   render() {
     return (
-      <View>
+      <View style = {{backgroundColor: 'cornflowerblue'}}>
         <AppHeader />
         <View>
           <View style={styles.buttonsContainer}>
             <TouchableOpacity>
               <Image
-                style={{ width: 300, height: 220, marginLeft: 5 }}
+                style={{ width: 280, height: 210, marginLeft: 5, marginTop: -30 }}
                 source={require('../assets/TeamImage.png')}
               />
             </TouchableOpacity>
@@ -77,6 +77,6 @@ const styles = StyleSheet.create({
   },
   ratingContainer: {
     alignSelf: 'center',
-    marginTop: 50,
+    marginTop: 48,
   },
-});
+})
