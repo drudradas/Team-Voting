@@ -8,61 +8,44 @@ import {
   Image,
 } from 'react-native';
 
-import AppHeader from '../components/AppHeader';
-import db from '../config';
+import SecretHeader from '../components/SecretHeader';
 
-export default class HomeScreen extends Component {
-  teamA() {
-    db.ref('/').update({
-      teamA: 1,
-    });
-  }
-
-  teamB() {
-    console.log(db);
-    db.ref('/').update({
-      teamB: 2,
-    });
-  }
-
+export default class SecretScreen extends Component {
   render() {
     return (
       <View style={styles.mainContainer}>
-        <AppHeader />
+        <SecretHeader />
         <View>
           <View style={styles.buttonsContainer}>
             <TouchableOpacity onPress={() => this.props.navigation.navigate('SecretScreen')}>
               <Image
-                style={{ width: 300, height: 220, marginLeft: 5 }}
-                source={require('../assets/TeamImage.png')}
+                style={{ width: 500, height: 220, marginLeft: 5, scaleX: 0.7, scaleY: 0.7 }}
+                source={require('../assets/Secret-Screen.png')}
               />
             </TouchableOpacity>
           </View>
           <View style={styles.ratingContainer}>
             <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
-              Vote Here For
+              Congrats
+            </Text>
+            <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
+              You Found
+            </Text>
+            <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
+              The Secret Screen
             </Text>
             <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
               ______________________________
             </Text>
-            <TouchableOpacity style={styles.buttons} onPress={this.teamA()}>
-              <Text style={{ fontSize: 20 }}>Team A</Text>
+            <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('HomeScreen')}>
+              <Text style={{ fontSize: 20 }}>Go Back</Text>
             </TouchableOpacity>
-            <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
-              or
-            </Text>
-            <TouchableOpacity style={styles.buttons} onPress={this.teamB()}>
-              <Text style={{ fontSize: 20 }}>Team B</Text>
-            </TouchableOpacity>
-            <Text style={{ textAlign: 'center', fontSize: 25, color: 'white' }}>
-              ______________________________
-            </Text>
             <Text
               style={{
                 textAlign: 'center',
                 fontSize: 25,
                 color: 'white',
-                marginTop: 10,
+                marginTop: 90,
               }}></Text>
           </View>
         </View>
@@ -98,3 +81,4 @@ const styles = StyleSheet.create({
     marginTop: 50,
   },
 });
+

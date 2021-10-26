@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-export default class AppHeader extends React.Component{
+export default class SecretScreen extends React.Component{
   render(){
     return(
       <View style= {styles.textContainer}>
-        <Text style={styles.text}>Team Voting App</Text>
+        <Text style={styles.text}>Secret Screen</Text>
       </View>
     );
   }
