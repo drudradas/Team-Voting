@@ -1,15 +1,15 @@
 import firebase from 'firebase';
 
+// add SDK Firebase
 var firebaseConfig = {
-  apiKey: "AIzaSyCwXq1FV8N151orYeGIKRSlA7P6Lhl347U",
-  authDomain: "team-voting-5fbb8.firebaseapp.com",
-  databaseURL: "https://team-voting-5fbb8-default-rtdb.firebaseio.com",
-  projectId: "team-voting-5fbb8",
-  storageBucket: "team-voting-5fbb8.appspot.com",
-  messagingSenderId: "876249878969",
-  appId: "1:876249878969:web:c73b1c42433274a160e668"
-};
+    apiKey: "AIzaSyA7kbulRbZVj0gBhDeIjo9AhO71Ky0rzJc",
+    authDomain: "team-voting-109ea.firebaseapp.com",
+    projectId: "team-voting-109ea",
+    storageBucket: "team-voting-109ea.appspot.com",
+    messagingSenderId: "527597580414",
+    appId: "1:527597580414:web:9d886b342d28973cbea82f"
+  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-  export default firebase.database();
+export default firebase.database();
