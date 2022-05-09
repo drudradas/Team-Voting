@@ -1,15 +1,12 @@
-import firebase from 'firebase';
-
-var firebaseConfig = {
-  apiKey: "AIzaSyCwXq1FV8N151orYeGIKRSlA7P6Lhl347U",
-  authDomain: "team-voting-5fbb8.firebaseapp.com",
-  databaseURL: "https://team-voting-5fbb8-default-rtdb.firebaseio.com",
-  projectId: "team-voting-5fbb8",
-  storageBucket: "team-voting-5fbb8.appspot.com",
-  messagingSenderId: "876249878969",
-  appId: "1:876249878969:web:c73b1c42433274a160e668"
+import firebase from "firebase";
+const firebaseConfig = {
+  apiKey: "AIzaSyBw8RZ8Hv5PUclSuO9_Lje3KEW1abCWGcw",
+  authDomain: "open-source-project-337d7.firebaseapp.com",
+  databaseURL: "https://open-source-project-337d7-default-rtdb.firebaseio.com",
+  projectId: "open-source-project-337d7",
+  storageBucket: "open-source-project-337d7.appspot.com",
+  messagingSenderId: "317825631",
+  appId: "1:317825631:web:de3a2e2140c796d8af71ea",
 };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-  export default firebase.database();
+export default firebase.database();
